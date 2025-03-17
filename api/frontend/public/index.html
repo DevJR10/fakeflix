@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>FakeFlix</h2>
+    </header>
+
+    <section class="section-banner">
+      <div class="banner"></div>
+      <div class="banner-text">
+        <h2>Assista já</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+          laboriosam a? Similique illum quia ipsum beatae atque. Non molestiae
+          fugit modi facere nisi, dolor vitae alias odit cum nulla quisquam.
+        </p>
+        <button>Clique aqui</button>
+      </div>
+    </section>
+
+    <main>
+      <div class="div-generos">
+        <h2>Genêros</h2>
+
+        <form class="form-generos">
+          <label><input type="radio" name="genero" value="acao"> Ação</label>
+          <label><input type="radio" name="genero" value="comedia"> Comédia</label>
+          <label><input type="radio" name="genero" value="drama"> Drama</label>
+          <label><input type="radio" name="genero" value="terror"> Terror</label>
+          <label><input type="radio" name="genero" value="suspense"> Suspense</label>
+          <label><input type="radio" name="genero" value="romance"> Romance</label>
+          <label><input type="radio" name="genero" value="infantil"> Infantil</label>
+          <button>Pesquisar</button>
+        </form>
+      </div>
+
+      <div class="div-movies">
+        <h2>Filmes disponiveis</h2>
+
+        <div class="search-movies">
+          <form class="form-movies">
+            <input type="text" placeholder="Nome do filme" />
+            <button type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#000000"
+              >
+                <path
+                  d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <div class="movies-grid">
+          <span class="not-found">Filme não encontrado</span>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

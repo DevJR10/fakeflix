@@ -1,0 +1,9 @@
+header{
+    padding: 10px;
+    background-color: red;
+}
+
+header h2{
+    margin: 40px 0;
+    text-align: center;
+}
