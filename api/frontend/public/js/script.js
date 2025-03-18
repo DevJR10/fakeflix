@@ -82,6 +82,8 @@ const searchGenero = async (element) => {
     'input[name="genero"]:checked'
   );
 
+  console.log(radioSelecionado)
+
   if (radioSelecionado) {
     const textRadio = radioSelecionado.value;
     const response = await fetch(`http://localhost:3000/generos/${textRadio}`, {
@@ -108,6 +110,9 @@ const searchGenero = async (element) => {
 
       moviesGrid.appendChild(elementCreated);
     }
+  } else{
+    moviesGrid.innerHTML = ''
+    loadElement()
   }
 };
 
@@ -122,4 +127,18 @@ const loadElement = async () => {
 
 formGenero.addEventListener("submit", searchGenero);
 formMovie.addEventListener("submit", searchElement);
+document.addEventListener("DOMContentLoaded", () => {
+  let selectedRadio = null;
+
+  document.querySelectorAll(".form-generos input[type='radio']").forEach(radio => {
+      radio.addEventListener("click", (event) => {
+          if (selectedRadio === event.target) {
+              event.target.checked = false;
+              selectedRadio = null;
+          } else {
+              selectedRadio = event.target;
+          }
+      });
+  });
+});
 loadElement();

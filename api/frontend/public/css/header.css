@@ -1,9 +1,14 @@
-header{
-    padding: 10px;
-    background-color: red;
+.header-content{
+    max-width: 1700px;
+    margin: 0 auto;
 }
 
-header h2{
+.header{
+    position: absolute;
+    top: 0;
+}
+
+.header h2{
+    color: #FFFFFF;
     margin: 40px 0;
-    text-align: center;
 }
